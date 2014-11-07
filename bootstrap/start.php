@@ -26,7 +26,7 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(function ()
 {
-    return strpos(gethostname(), 'local') ? 'local' : 'production';
+    return strpos(gethostname(), 'bjsas.alexjanderbacalso.com') ? 'production' : 'local';
 });
 
 /*

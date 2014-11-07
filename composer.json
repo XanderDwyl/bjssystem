@@ -28,6 +28,9 @@
 		],
 		"post-create-project-cmd": [
 			"php artisan key:generate"
+		],
+		"post-publish-packages-cmd": [
+
 		]
 	},
 	"config": {
