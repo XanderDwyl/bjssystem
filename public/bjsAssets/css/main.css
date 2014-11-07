@@ -1,0 +1,293 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Lato:100,300,400);
+
+ul, li, ol {
+	list-style : none;
+	padding    : 0;
+}
+
+.no-select {
+	-webkit-touch-callout : none;
+	-webkit-user-select   : none;
+	-khtml-user-select    : none;
+	-moz-user-select      : none;
+	-ms-user-select       : none;
+	user-select           : none;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	//background: url(../bg1.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+}
+.footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	/* Set the fixed height of the footer here */
+	height           : 60px;
+	background-color : #fafafa;
+	border-top       : 1px solid #e4e4e4;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+	padding    : 13px 15px 0;
+	text-align : center;
+	color      : #757575;
+}
+
+/* Modified Buttons */
+.btn-black {
+	background : #000000;
+	color      : #cccccc;
+}
+.btn-black:hover {
+	color : #ffffff;
+}
+.footer > .container .btn{
+	margin-left : 15px;
+}
+code {
+  font-size: 80%;
+}
+
+#login-wrapper {
+	-webkit-border-radius : 15px;
+	-moz-border-radius    : 15px;
+	-ms-border-radius     : 15px;
+	-o-border-radius      : 15px;
+	border-radius         : 15px;
+	-webkit-box-shadow    : 0 0 8px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow       : 0 0 8px rgba(0, 0, 0, 0.4);
+	box-shadow            : 0 0 8px rgba(0, 0, 0, 0.4);
+	display               : block;
+	margin                : 15% auto;
+	padding               : 25px;
+	max-width             : 420px;
+	min-height            : 320px;
+	background            : white;
+	text-align            : center;
+}
+#login-wrapper input, #login-wrapper .login-footer span {
+	font-family : 'Lato', Helvetica, sans-serif;
+	font-size   : 16px !important;
+	color       : #333333;
+	font-weight : 300;
+}
+
+.login-form legend {
+  font-family            : 'Lato', Helvetica, sans-serif;
+  font-size              : 36px;
+  font-weight            : 300;
+  color                  : #333333;
+  -webkit-font-smoothing : subpixel-antialiased;
+}
+.login-form .input-group {
+	margin-bottom : 15px;
+}
+.login-form .input-group .input-group-addon {
+	min-width : 40px;
+}
+.login-form legend {
+	margin-top     : 5px;
+	margin-bottom  : 30px;
+	padding-bottom : 25px;
+}
+.login-form .login-body {
+	padding-bottom : 15px;
+	border-bottom  : 1px solid #eeeeee;
+}
+.login-form .login-footer {
+	margin-top : 20px;
+}
+.login-form .login-footer .btn {
+	-webkit-box-shadow : none;
+	-moz-box-shadow    : none;
+	box-shadow         : none;
+	margin-left        : 160px;
+	padding            : 7px 25px;
+	background-image   : none;
+}
+
+/* Messages */
+.flash-message {
+	height     : 60px;
+	margin-top : 50px;
+}
+
+/* Panel */
+.form-group {
+	width      : 100%;
+	overflow   : visible;
+	position   : relative;
+	min-height : 40px;
+	display    : inline-block;
+}
+li.form-group {
+	padding : 3px;
+}
+.form-group > label, .form-group > div {
+	float          : none;
+	vertical-align : middle;
+	display        : inline-block;
+}
+.form-group > .extend-right {
+	width         : 65.44%;
+	position      : relative;
+	min-height    : 1px;
+	padding-right : 15px;
+	padding-left  : 15px;
+}
+
+.form-group > div.input-group > input.form-control {
+	padding   : 3px;
+	height    : 32px;
+	font-size : 16px;
+}
+
+.media {
+	padding : 0 10px 10px;
+}
+
+.divider {
+	height           : 1px;
+	margin           : 9px 0;
+	overflow         : hidden;
+	background-color : #e5e5e5;
+}
+.media-avatar, .media-body {
+	display        : inline-block;
+	float          : none;
+	vertical-align : middle;
+}
+.media-body {
+	width : 75%;
+}
+.media-avatar {
+	margin-right : 10px;
+}
+.list-body {
+	width : 75%;
+}
+
+.media-group {
+	display : block;
+}
+.media-group label {
+	padding : 0;
+}
+.control-data {
+	font-weight : 300;
+	color       : gray;
+	font-style  : italic;
+}
+
+.panel-body, .panel-footer {
+	position   : relative;
+	min-height : 55px;
+	overflow   : visible;
+}
+.panel-body .photo {
+	position   : absolute;
+	min-height : 126px;
+	max-width  : 278px;
+	top        : 213px;
+	left       : 440px;
+}
+.photo i {
+	font-size : 110px;
+}
+.panel-footer .input-group {
+	width : 100%;
+}
+.panel-footer .input-group > button.btn-success {
+	margin-right : 15px;
+	border       : 1px solid #ffffff;
+}
+.btn-group > label.btn {
+	min-width : 105px;
+}
+
+#birthdatepicker {
+	cursor : pointer;
+}
+#payperiod .input-group-addon {
+	padding : 4px 12px;
+}
+
+.has-error > .btn-group > label.btn,
+.has-error > .btn-group > button.selectpicker {
+	border-color       : #a94442;
+	-webkit-box-shadow : inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow         : inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.sp-employee .dropdown-menu {
+	z-index : 1071 !important;
+}
+
+/* tooltip */
+.tooltip-show[data-placement="bottom-left"],
+.tooltip-show[data-placement="bottom-right"],
+.tooltip-show[data-placement="bottom"] {
+  margin-bottom : 15px;
+}
+.tooltip.top-left .tooltip-arrow {
+  border-top-color: #a94442 !important;
+}
+.tooltip.bottom-left .tooltip-arrow {
+  border-bottom-color: #a94442 !important;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #a94442 !important;
+}
+.tooltip .tooltip-inner {
+  background-color: #a94442;
+}
+
+/* custom width */
+.width-100 {
+	width : 100%;
+}
+
+.right-form {
+	height      : 215px;
+	position    : absolute;
+	right       : 0;
+}
+/* break words in select */
+.sp-employee > .dropdown-menu {
+    width: 200px;
+}
+.sp-employee > .dropdown-menu li a {
+    word-wrap   : break-word;
+    white-space : normal;
+}
+
+/* icons */
+.fa {
+	min-width : 20px;
+}

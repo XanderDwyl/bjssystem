@@ -1,0 +1,30 @@
+{
+  "name": "bjsas",
+  "version": "0.0.1",
+  "homepage": "bjsas.alexjanderbacalso.com",
+  "authors": [
+    "Alexjander Bacalso <janderbacalso@gmail.com>"
+  ],
+  "description": "BJSMotoshop System is a web application based on Laravel PHP framework. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, and caching.",
+  "keywords": [
+    "motoshop",
+    "accounting",
+    "system"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "/public/packages"
+  ],
+  "dependencies": {
+    "moment": "~2.8.3",
+    "bootstrap-select": "~1.6.3",
+    "angular": "~1.3.1",
+    "angular-moment": "~0.8.2",
+    "moment-range": "~1.0.5",
+    "underscore": "~1.7.0",
+    "bootstrap": "~3.3.0",
+    "angular-sanitize": "~1.3.1",
+    "angular-route": "~1.3.1",
+    "fontawesome": "~4.2.0"
+  }
+}
