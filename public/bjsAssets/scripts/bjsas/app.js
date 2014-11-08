@@ -5,5 +5,6 @@ angular.module('bjsApp', [
 	'ngRoute',
 	'controllers',
 	'services',
+	'filters',
 	'directives'
 ]);

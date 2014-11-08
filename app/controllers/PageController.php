@@ -5,7 +5,7 @@ class PageController extends BaseController {
 
 	public function __construct() {
 		$this->beforeFilter('csrf', array('on'=>'post'));
-		$this->beforeFilter('auth', array('only'=>array('showDashboard', 'showRegisterForm', 'showEmployeeForm', 'showPayrollForm', 'showCashadvanceForm')));
+		$this->beforeFilter('auth', array('only'=>array('showDashboard', 'showRegisterForm', 'showEmployeeForm', 'showPayrollForm', 'showCashadvanceForm', 'showSalary')));
 	}
 	public function showIndex() {
 		return Redirect::to('login');
@@ -13,6 +13,9 @@ class PageController extends BaseController {
 	public function showDashboard() {
 		$this->layout->content = View::make('pages.dashboard');
 	}
+	// public function showSalary() {
+	// 	$this->layout->content = View::make('pages.salary');
+	// }
 
 	public function showLoginForm()
 	{

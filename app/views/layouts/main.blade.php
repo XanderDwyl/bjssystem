@@ -38,6 +38,7 @@
 								<li><a href="cashadvance">Cash Advance</a></li>
 								<li class="divider"></li>
 								<li><a href="employee">Add Employee</a></li>
+								<li><a href="salary">Add Salary</a></li>
 							</ul>
 						</li>
 					@endif
@@ -103,10 +104,11 @@
 		{{ HTML::script( 'packages/moment-range/lib/moment-range.js' ) }}
 		{{ HTML::script( 'packages/angular-moment/angular-moment.js' ) }}
 
+		{{ HTML::script( 'bjsAssets/scripts/bjsas/app.js' ) }}
 		{{ HTML::script( 'bjsAssets/scripts/bjsas/controllers.js' ) }}
 		{{ HTML::script( 'bjsAssets/scripts/bjsas/services.js' ) }}
+		{{ HTML::script( 'bjsAssets/scripts/bjsas/filters.js' ) }}
 		{{ HTML::script( 'bjsAssets/scripts/bjsas/directives.js' ) }}
-		{{ HTML::script( 'bjsAssets/scripts/bjsas/app.js' ) }}
 
 		{{ HTML::script( 'packages/bootstrap-select/dist/js/bootstrap-select.js' ) }}
 		@yield( 'footer_scripts' )

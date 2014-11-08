@@ -66,4 +66,13 @@ angular.module('controllers', ['angularMoment'])
 			$scope.netincome  = $scope.subtotal - $scope.totalDeduction;
 		};
 
+	} )
+	.controller('salaryController', function($scope, $http, Employees ) {
+		$scope.init = function () {
+			Employees.get().then( function( response, status) {
+				$scope.salary_rate = response.data;
+
+
+			} );
+		};
 	} );

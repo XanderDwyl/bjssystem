@@ -28,6 +28,6 @@ angular.module('directives', [])
 	] )
 	.directive('leavePlurality', function () {
 		return {
-			template : 'Total no. of hour{{label.leave}} on leave'
+			'template' : 'Total no. of hour{{label.leave}} on leave'
 		};
 	} );

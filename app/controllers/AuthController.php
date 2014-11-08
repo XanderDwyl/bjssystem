@@ -16,7 +16,7 @@ class AuthController extends Controller {
 			return Redirect::back()->withInput()->withErrors($validator);
 		}
 
-		$addEmployee = TransactionQuery::addEmployeeSalary( );
+		$addEmployee = TransactionQuery::addEmployee( );
 
 		return Redirect::back()->with(array('message'=>$addEmployee['message'], 'status'=>$addEmployee['type']));
 	}

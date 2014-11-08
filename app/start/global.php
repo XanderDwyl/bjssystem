@@ -50,8 +50,7 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 
 App::error(function(Exception $exception, $code)
 {
-	return Response::make("Be right back!", 404);
-	// Log::error($exception);
+	Log::error($exception);
 });
 
 /*

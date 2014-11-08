@@ -20,9 +20,7 @@ class TransactionQuery {
 		$employee->birth_date   = date("Y-m-d", strtotime(Input::get('birthDate')));
 		$employee->gender       = Input::get('gender');
 		$employee->home_address = Input::get('homeAddress');
-		$employee->hired_date   = date("Y-m-d", strtotime(Input::get('hiredDate')));
-		$employee->updated_at   = date("Y-m-d");
-		$employee->created_at   = date("Y-m-d");
+		$employee->hired_date   = date("Y-m-d H:i:s", strtotime(Input::get('hiredDate')));
 		$employee->save();
 
 		self::addSalary( $employee->id );
@@ -41,8 +39,6 @@ class TransactionQuery {
 
 		$salaryrate->amount     = Input::get('salary');
 		$salaryrate->status     = 1;
-		$salaryrate->updated_at = date("Y-m-d");
-		$salaryrate->created_at = date("Y-m-d");
 		$salaryrate->emp_id     = $id;
 		$salaryrate->save();
 	}
@@ -53,6 +49,10 @@ class TransactionQuery {
 			$salaryQuery = Employee::with('salary_rates')->where('id', '=', $emp_id)->first();
 		} else {
 			$salaryQuery = Employee::with('salary_rates')->get();
+
+			foreach ($salaryQuery as $key => $value) {
+				# code...
+			}
 		}
 		return $salaryQuery;
 	}
