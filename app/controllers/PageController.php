@@ -13,10 +13,6 @@ class PageController extends BaseController {
 	public function showDashboard() {
 		$this->layout->content = View::make('pages.dashboard');
 	}
-	// public function showSalary() {
-	// 	$this->layout->content = View::make('pages.salary');
-	// }
-
 	public function showLoginForm()
 	{
 		if(Auth::check())

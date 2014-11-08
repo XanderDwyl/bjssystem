@@ -8,7 +8,7 @@
 	<meta name="author" content="BJS MotoShop">
 
 	{{ HTML::style( 'packages/bootstrap/dist/css/bootstrap.css' ) }}
-	{{ HTML::style( 'packages/font-awesome/css/font-awesome.css' ) }}
+	{{ HTML::style( 'packages/fontawesome/css/font-awesome.css' ) }}
 	{{ HTML::style( 'bjsAssets/css/main.css' ) }}
 	{{ HTML::style( 'bjsAssets/css/plugins/date-picker/datepicker.css' ) }}
 	{{ HTML::style( 'packages/bootstrap-select/dist/css/bootstrap-select.css' ) }}

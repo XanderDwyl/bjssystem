@@ -68,6 +68,13 @@ angular.module('controllers', ['angularMoment'])
 
 	} )
 	.controller('salaryController', function($scope, $http, Employees ) {
+
+		$scope.template = {
+			name    : 'salary',
+			urlData : '/bjsAssets/scripts/bjsas/templates/salaryrate.html',
+			urlForm : '/bjsAssets/scripts/bjsas/templates/salaryrate.html'
+		};
+
 		$scope.init = function () {
 			Employees.get().then( function( response, status) {
 				$scope.salary_rate = response.data;
