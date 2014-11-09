@@ -4,11 +4,6 @@ class AuthController extends Controller {
 
 	protected $layout = "layouts.main";
 
-	public function __construct() {
-		$this->beforeFilter('csrf', array('on'=>'post'));
-		$this->beforeFilter('auth', array('only'=>array('getDashboard', 'getEmployee', 'getCashadvance', 'getPayroll')));
-	}
-
 	public function postEmployee() {
 		$validator = Validator::make(Input::all(), Employee::$rules);
 
