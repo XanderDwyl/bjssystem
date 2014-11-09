@@ -78,8 +78,6 @@ angular.module('controllers', ['angularMoment'])
 		$scope.init = function () {
 			Employees.get().then( function( response, status) {
 				$scope.salary_rate = response.data;
-
-
 			} );
 		};
 	} );
